@@ -1,6 +1,6 @@
 use v6;
 use Test;
-use Panda::Bundler;
+use Panda::Bundler :ALL;
 
 plan 11;
 

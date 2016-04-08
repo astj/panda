@@ -5,7 +5,7 @@ use File::Find;
 use JSON::Fast;
 use MONKEY-SEE-NO-EVAL;
 
-sub guess-project($where, Str :$name is copy, Str :$desc is copy) is export {
+sub guess-project($where, Str :$name is copy, Str :$desc is copy) is export(:ALL) {
     my $source-url;
 
     indir $where, {
