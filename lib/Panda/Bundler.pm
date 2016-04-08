@@ -10,7 +10,7 @@ sub guess-project($where, Str :$name is copy, Str :$desc is copy) is export {
 
     indir $where, {
         my $metafile = find-meta-file(".");
-        if $metafile.IO.e {
+        if $metafile.defined && $metafile.IO.e {
             try my $json = from-json $metafile.IO.slurp;
             if $json {
                 $name       = $json<name>        if !$name && $json<name>;
