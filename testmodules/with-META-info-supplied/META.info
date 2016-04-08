@@ -1,0 +1,17 @@
+{
+  "name": "Example",
+  "support": {
+  },
+  "perl": "v6",
+  "build-depends": [
+  ],
+  "provides": {
+  },
+  "depends": [
+  ],
+  "test-depends": [
+  ],
+  "description": "an example module",
+  "version": "v0.0",
+  "source-url" : "git://github.com/astj/nosuchrepo.git"
+}
